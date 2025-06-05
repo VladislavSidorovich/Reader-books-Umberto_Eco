@@ -1186,7 +1186,7 @@ App.prototype.onSearchClick1 = function (searchTerm) {
                 let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                    <a href="${result.cfi}" class="result-link">'(1) Есть вещи, которые опасно публи'</a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
