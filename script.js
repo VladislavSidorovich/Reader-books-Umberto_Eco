@@ -1186,7 +1186,7 @@ App.prototype.onSearchClick1 = function (searchTerm) {
                 let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">'(1) Есть вещи, которые опасно публи'</a>
+                    <a href="${result.cfi}" class="result-link">(1) Есть вещи, которые опасно публи</a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
@@ -1212,7 +1212,7 @@ App.prototype.onSearchClick2 = function (searchTerm) {
                    let additionalText = ""; 
 
                 resultEl.innerHTML = `
-                    <a href="${result.cfi}" class="result-link">${excerpt}${additionalText}</a>
+                    <a href="${result.cfi}" class="result-link">(2) Как пишет Дон Тапскотт в своей статье «Жизнь без понимания»</a>
                 `;
                 resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
                 container.appendChild(resultEl);
@@ -1236,7 +1236,7 @@ App.prototype.onSearchClick3 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(3) Хотя еще в герметическом корпусе текстов был указан иной путь</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1256,7 +1256,7 @@ App.prototype.onSearchClick4 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(4) Присутствие в расщепленном бытии (будучи вынужденными взаимодействовать</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
@@ -1275,7 +1275,7 @@ App.prototype.onSearchClick5 = function (searchTerm) {
             let excerpt = result.excerpt.trim().replace(/^(\.\.\.|\s)+/, '');
 
             resultEl.innerHTML = `
-                <a href="${result.cfi}" class="result-link">${excerpt}</a>
+                <a href="${result.cfi}" class="result-link">(5) Выражаясь современным языком, наличие двух цивилизаций</a>
             `;
             resultEl.querySelector(".result-link").addEventListener("click", this.onResultClick.bind(this, result.cfi));
             container.appendChild(resultEl);
